@@ -1,0 +1,63 @@
+
+h1{
+    /* padding-top: 15px; */
+    font-size: x-large; 
+    color: brown;
+}
+
+.closed{
+    background-color: lightgreen;
+    .close{
+        display: block;
+    }
+    .open{
+        display: none;
+    }
+    .gift{
+        display: none;
+    }
+}
+
+.opened{
+    .close{
+        display: none;
+    }
+    .open{
+        display: block;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 25px;
+    align-items: center;
+}
+
+.close{
+    width: 500px;
+}
+
+.open{
+    align-self: center;
+    width: 500px;
+}
+
+.gift{
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+    left: 46%;
+    right: 0px;
+    top: 25%;
+    bottom: 0px;    
+}
+
+.giftarea{
+    display: flex;
+}
+
+.openbutton{
+    height : 75px;
+}
